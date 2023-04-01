@@ -2,6 +2,7 @@ import React from 'react'
 import '../App.css'
 
 export const CartWidget = ({cantCarrito}) => {
+  
   return (
     <>
     CARRITO

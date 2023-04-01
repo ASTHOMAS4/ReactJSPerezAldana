@@ -5,6 +5,7 @@ export const App = () => {
   return (
     
     <div>
+      
         <NavBar />
         <ItemListContainer greeting={"Lista de Productos"}/>
     </div>

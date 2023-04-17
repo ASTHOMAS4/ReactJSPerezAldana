@@ -9,10 +9,10 @@ export const NavBar = () => {
             <header>
                 <nav>
                     <input type="checkbox" id="check" />
-                    <label for="check" className='checkbtn'>
-                        <i class="bi bi-list"></i>
+                    <label htmlFor="check" className='checkbtn'>
+                        <i className="bi bi-list"></i>
                     </label>
-                    <a href='#' class="enlace">
+                    <a href='#' className="enlace">
                         <img src={logotienda} alt='logodelatienda' className='logo' />
                     </a>
                     

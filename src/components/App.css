@@ -55,6 +55,12 @@ nav {
     display: none;
   }
   
+.itemDetail{
+  max-width: 740px;
+  margin-top: 10px;
+  
+}
+
 
 /* responsive */
 @media (max-width: 858px) {

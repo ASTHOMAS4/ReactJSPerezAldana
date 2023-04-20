@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { ItemList } from '../ItemList/ItemList'
 export const ItemListContainer = ({ greeting }) => {
-
+/*
   const BDD = [
     {
       "id": 1,
@@ -206,9 +206,10 @@ export const ItemListContainer = ({ greeting }) => {
     }
 
   ]
-
+*/
 
   const [productos, setProductos] = useState([])
+  /*
   useEffect(() => {
     const promesa = () => new Promise((res, rej) => {
       if (true) {
@@ -224,10 +225,20 @@ export const ItemListContainer = ({ greeting }) => {
       .catch(error => console.error(error)
     
   )
-}, [])
+}, [])*/
+
+useEffect(()=>{
+  fetch('./json/productos.json')
+  .then(response => response.json())
+  .then(productos=>{
+    const productosFiltrados = productos.filter(prod =>prod.stock > 0)
+    setProductos(productosFiltrados)
+  })
+},[])
+
 return (
   <div className='row'>
-    {productos}
+    <ItemList productos= {productos}/>
   </div>
 )
 }

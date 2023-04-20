@@ -6,7 +6,7 @@
        "modelo": "Jerry",
        "precio": 1000,
        "stock": 20,
-       "img":"img/1-funko-jerry.jpg"
+       "img":"/img/1-funko-jerry.jpg"
 
     },
     {
@@ -16,7 +16,7 @@
         "modelo": "Scary Terry",
         "precio": 1000,
         "stock": 20,
-        "img": "img/2-funko-scary-terry.jpg"
+        "img": "/img/2-funko-scary-terry.jpg"
  
     },
     {
@@ -26,7 +26,7 @@
         "modelo": "Summer",
         "precio": 1000,
         "stock": 20,
-        "img":"img/3-funko-summer.jpg"
+        "img":"/img/3-funko-summer.jpg"
  
     },
     {
@@ -36,7 +36,7 @@
         "modelo": "Unity",
         "precio": 1000,
         "stock": 20,
-        "img":"img/4-funko-unidad.jpg"
+        "img":"/img/4-funko-unidad.jpg"
  
     },
     {
@@ -46,7 +46,7 @@
         "modelo": "Jerry",
         "precio": 1000,
         "stock": 20,
-        "img":"img/5-jerry-action.jpg"
+        "img":"/img/5-jerry-action.jpg"
  
     },
     {
@@ -56,7 +56,7 @@
         "modelo": "U",
         "precio": 1000,
         "stock": 20,
-        "img":"img/6-pistola-portales.jpg"
+        "img":"/img/6-pistola-portales.jpg"
  
     },
     {
@@ -66,7 +66,7 @@
         "modelo": "Morty",
         "precio": 1000,
         "stock": 20,
-        "img":"img/7-cargador-morty.jpg"
+        "img":"/img/7-cargador-morty.jpg"
  
     },
     {
@@ -76,7 +76,7 @@
         "modelo": "R&M talle U",
         "precio": 1000,
         "stock": 20,
-        "img":"img/8-medias-rym1.jpg"
+        "img":"/img/8-medias-rym1.jpg"
   
     },
     {
@@ -86,7 +86,7 @@
         "modelo": "Rick talle U",
         "precio": 1000,
         "stock": 20,
-        "img":"img/9-medias-rick2.jpg"
+        "img":"/img/9-medias-rick2.jpg"
   
     },
     {
@@ -96,7 +96,7 @@
         "modelo": "R&M talle U",
         "precio": 1000,
         "stock": 20,
-        "img":"img/10-pantunflas-rick-morty.jpg"
+        "img":"/img/10-pantunflas-rick-morty.jpg"
   
     },
     {
@@ -106,7 +106,7 @@
         "modelo": "Pickle Rick",
         "precio": 1000,
         "stock": 20,
-        "img":"img/11-pin-pikle.jpg"
+        "img":"/img/11-pin-pikle.jpg"
   
     },
     {
@@ -116,7 +116,7 @@
         "modelo": "Sorpresa",
         "precio": 1000,
         "stock": 20,
-        "img":"img/12-llaveros.jpg"
+        "img":"/img/12-llaveros.jpg"
  
     },
     {
@@ -126,7 +126,7 @@
         "modelo": "Pickle Rick",
         "precio": 1000,
         "stock": 20,
-        "img":"img/13-mock-up-pickle-rick.jpg"
+        "img":"/img/13-mock-up-pickle-rick.jpg"
   
     },
     {
@@ -136,7 +136,7 @@
         "modelo": "Portal de Aventura",
         "precio": 1000,
         "stock": 20,
-        "img":"img/14-poster-enmarcado.jpg"
+        "img":"/img/14-poster-enmarcado.jpg"
   
     },
     {
@@ -146,7 +146,7 @@
         "modelo": "Mr. Meeseks Box",
         "precio": 1000,
         "stock": 20,
-        "img":"img/15-meeseks-caja.jpg"
+        "img":"/img/15-meeseks-caja.jpg"
   
     },
     {
@@ -156,7 +156,7 @@
         "modelo": "R&M",
         "precio": 1000,
         "stock": 20,
-        "img":"img/16-monopoly-rick-moty.jpg"
+        "img":"/img/16-monopoly-rick-moty.jpg"
   
     },
     {
@@ -166,7 +166,7 @@
        "modelo": "Plumbus",
        "precio": 1000,
        "stock": 20,
-       "img":"img/17-plumbus-taza.jpg"
+       "img":"/img/17-plumbus-taza.jpg"
 
     },
     {
@@ -176,7 +176,7 @@
         "modelo": "Pickle Rick",
         "precio": 1000,
         "stock": 20,
-        "img":"img/18-taza-pickle-rick.jpg"
+        "img":"/img/18-taza-pickle-rick.jpg"
  
     },
     {
@@ -186,7 +186,7 @@
         "modelo": "R&M",
         "precio": 1000,
         "stock": 20,
-        "img":"img/19-taza-rick-morty.jpg"
+        "img":"/img/19-taza-rick-morty.jpg"
  
     },
     {
@@ -196,7 +196,7 @@
         "modelo": "Rick",
         "precio": 1000,
         "stock": 20,
-        "img":"img/20-termo-rick.jpg"
+        "img":"/img/20-termo-rick.jpg"
  
     }
     

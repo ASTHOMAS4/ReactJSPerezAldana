@@ -13,10 +13,9 @@ export const App = () => {
 
           <Routes>
             <Route path='/' element= {<ItemListContainer/>} />
-            <Route path='/category/:category' element= {<ItemListContainer/>}  />
-            <Route path='/product/:id' element= {<ItemListContainer/>}  />
-            <ItemDetailContainer />
-            <ItemListContainer />
+            <Route path='/category/:category' element={<ItemListContainer/>}  />
+            <Route path='/product/:id' element={<ItemDetailContainer/>}  />
+            
           </Routes>
 
 

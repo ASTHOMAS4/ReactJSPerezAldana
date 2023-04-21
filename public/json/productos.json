@@ -141,7 +141,7 @@
     },
     {
         "id": 15,
-        "categoria": "juguetes",
+        "categoria": "juegos",
         "nombre": "Cards Set",
         "modelo": "Mr. Meeseks Box",
         "precio": 1000,
@@ -151,7 +151,7 @@
     },
     {
         "id": 16,
-        "categoria": "juguetes",
+        "categoria": "juegos",
         "nombre": "Monopoly",
         "modelo": "R&M",
         "precio": 1000,

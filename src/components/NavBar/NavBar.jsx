@@ -2,6 +2,7 @@ import React from 'react'
 import { CartWidget } from '../CartWidget/CartWidget.jsx'
 import logotienda from '../../assets/img/logotiendacontitulo.png'
 import '../App.css'
+import { Link } from 'react-router-dom'
 
 export const NavBar = () => {
     return (

@@ -5,6 +5,7 @@ export const ItemDetail = ({item}) => {
         console.log(contador)
         console.log(item)
     }
+    
   return (
     <div className="row g-0">
         <div className="col-md-4">

@@ -11,7 +11,7 @@ export const Item = ({item}) => {
           <p className="card-text">Precio: ${item.precio}</p>
           <p className="card-text">Stock: {item.stock}</p>
           <Link className='nav-link' to={`/product/${item.id}`}>
-            <button className="btn btn-primary"> VER PRODUCTO</button>
+            <button className="btn btn-primary"> VER PRODUCTO </button>
           </Link>
         </div>
     </div>

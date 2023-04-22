@@ -1,7 +1,5 @@
 import { useCount } from "../../hooks/useCount";
-
-import React from 'react'
-
+ 
 export const ItemCount = ({valInicial, min, max, onAdd}) => {
     const {count, sum, minus, reset} = useCount(valInicial, min, max)
 

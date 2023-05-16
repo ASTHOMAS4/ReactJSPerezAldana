@@ -7,7 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Checkout } from './Checkout/Checkout'
 import { DarkModeProvider } from '../context/DarkModeContext.js'
 import { Cart } from './Cart/Cart.jsx'
-
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { createProducts, getProducts } from '../firebase/firebase'
 
 export const App = () => {
@@ -19,6 +20,7 @@ export const App = () => {
         <DarkModeProvider>
           <NavBar />
           <CategoriaNavBar />
+          <ToastContainer />
           <Routes>
             <Route path='/' element={<ItemListContainer />} />
             <Route path='/category/:category' element={<ItemListContainer />} />

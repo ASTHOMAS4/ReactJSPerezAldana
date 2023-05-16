@@ -1,11 +1,12 @@
 import { useRef } from "react"
 import { useCarritoContext } from "../../context/CartContext"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { createOrdenCompra, getOrdenCompra, getProduct, updateProduct } from "../../firebase/firebase"
+import { toast } from "react-toastify"
 
 export const Checkout = () => {
     const dataForm = useRef()
-
+    let navigate = useNavigate()
     const { carrito, totalPrice, emptyCart } = useCarritoContext()
 
     const consultarForm = (e) => {
@@ -27,8 +28,28 @@ export const Checkout = () => {
             })
         })
 
+        const aux2 = aux.map(prod => ({ id: prod.id, quantity: prod.quantity, precio: prod.precio }));
 
-        e.target.reset()
+        createOrdenCompra(cliente, totalPrice(), aux2, new Date().toLocaleString('es-AR', { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone }))
+            .then(ordenCompra => {
+
+                toast(` 🛒 Muchas gracias por comprar con nosotros, su ID de compra es ${ordenCompra.id} por un total de ${totalPrice()}, en breve nos contactaremos para el envio`, {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                });
+                emptyCart()
+                e.target.reset() 
+                navigate("/") 
+            })
+            .catch(error => {
+                console.error(error)
+            })
     }
 
 

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
+import { memo } from "react"
 import './CategoriaNavBar.css'
 
-export const CategoriaNavBar = () => {
+export const CategoriaNavBar = memo( () => {
   return (
     <div className="contCategorias">
         <ul>
@@ -17,4 +18,4 @@ export const CategoriaNavBar = () => {
         </ul>
     </div>
   )
-}
+})

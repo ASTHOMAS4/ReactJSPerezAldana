@@ -2,8 +2,7 @@ import React from 'react'
 import { CartWidget } from '../CartWidget/CartWidget.jsx'
 import logotienda from '../../assets/img/logotiendacontitulo.png'
 import '../App.css'
-import { Link } from 'react-router-dom'
-
+import { DarkModeButton } from './DarkModeButton/DarkModeButton.jsx'
 export const NavBar = () => {
     return (
         <>
@@ -22,7 +21,8 @@ export const NavBar = () => {
                         <li><a href='#' >NOSOTROS</a></li>
                         <li><a href='#' >CATALOGO</a></li>
                         <li><a href='#' >REGISTRARSE</a></li>
-                        <li><a href='#' className='menucarrito' ><CartWidget cantCarrito={3} /></a></li>
+                        <li><span className='menucarrito' ><CartWidget /></span></li>
+                        <DarkModeButton />
                     </ul>
                     
                 </nav>

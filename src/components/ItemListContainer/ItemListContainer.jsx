@@ -1,14 +1,16 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { ItemList } from '../ItemList/ItemList'
-import { Link } from 'react-router-dom'
-import { CategoriaNavBar } from '../CategoriaNavBar/CategoriaNavBar'
 import { useParams } from 'react-router-dom'
+import { useDarkModeContext } from '../../context/DarkModeContext'
+
 export const ItemListContainer = ({ greeting }) => {
  
   const [productos, setProductos] = useState([])
-  
   const {category} = useParams()
+  const {darkMode} = useDarkModeContext()
+  console.log(darkMode)
+
   useEffect(() => {
     if (category) {
       fetch('../json/productos.json')
@@ -30,7 +32,7 @@ export const ItemListContainer = ({ greeting }) => {
 
   return (
     <div className='row containerProds'>
-      <ItemList productos={productos} />
+      <ItemList productos={productos} plantilla={"Item"} />
     </div>
   )
 }

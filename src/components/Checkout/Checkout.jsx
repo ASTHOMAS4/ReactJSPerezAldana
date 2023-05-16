@@ -1,6 +1,7 @@
 import { useRef } from "react"
 import { useCarritoContext } from "../../context/CartContext"
 import { Link } from "react-router-dom"
+import { createOrdenCompra, getOrdenCompra, getProduct, updateProduct } from "../../firebase/firebase"
 
 export const Checkout = () => {
     const dataForm = useRef()
@@ -9,10 +10,24 @@ export const Checkout = () => {
 
     const consultarForm = (e) => {
         e.preventDefault()
+
         const datosFormulario = new FormData(dataForm.current)
-        console.log(datosFormulario.get('nombre'))
         const cliente = Object.fromEntries(datosFormulario)
-        console.log(cliente)
+
+        const aux = [...carrito]
+
+        aux.forEach(prodCarrito =>{
+            getProduct(prodCarrito.id).then(prodBDD=>{
+                if (prodBDD.stock >= prodCarrito.quantity){
+                    prodBDD.stock -= prodCarrito.quantity
+                    updateProduct(prodBDD.id, prodBDD)
+                }else{
+                    console.log("ATENCIÓN, El stock NO es mayor o igual a la cantidad que se quiere comprar")
+                }
+            })
+        })
+
+
         e.target.reset()
     }
 

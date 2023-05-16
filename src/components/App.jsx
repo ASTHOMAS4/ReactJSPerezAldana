@@ -7,7 +7,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Checkout } from './Checkout/Checkout'
 import { DarkModeProvider } from '../context/DarkModeContext.js'
 import { Cart } from './Cart/Cart.jsx'
+
+import { createProducts, getProducts } from '../firebase/firebase'
+
 export const App = () => {
+  //createProducts()
   return (
 
     <div>

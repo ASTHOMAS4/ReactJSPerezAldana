@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { ItemList } from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
 import { useDarkModeContext } from '../../context/DarkModeContext'
+import { getProducts } from '../../firebase/firebase.js'
 
 export const ItemListContainer = ({ greeting }) => {
  
@@ -13,15 +14,13 @@ export const ItemListContainer = ({ greeting }) => {
 
   useEffect(() => {
     if (category) {
-      fetch('../json/productos.json')
-        .then(response => response.json())
+      getProducts()
         .then(productos => {
           const productosFiltrados = productos.filter(prod => prod.stock > 0).filter(prod => prod.categoria === (category))
           setProductos(productosFiltrados)
         })
     }else{
-      fetch('./json/productos.json')
-      .then(response => response.json())
+      getProducts()
       .then(productos => {
         const productosFiltrados = productos.filter(prod => prod.stock > 0)
         setProductos(productosFiltrados)

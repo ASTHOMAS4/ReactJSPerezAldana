@@ -17,6 +17,8 @@ export const NavBar = () => {
                     </a>
                     
                     <ul>
+                        //aca estarán las rutas para los extras como mi proyecto personal
+                        // por eso el nav secundario funciona como Nav principal.
                         <li><a href='#' >INICIO</a></li>
                         <li><a href='#' >NOSOTROS</a></li>
                         <li><a href='#' >CATALOGO</a></li>

@@ -7,7 +7,7 @@ import { getFirestore, addDoc, getDoc, getDocs, deleteDoc, updateDoc, collection
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAHN6RYIze5Zb--_A7xFtb6eRBJfqPS5yQ",
+    apiKey: " ",
     authDomain: "ecommerce-perez-aldana.firebaseapp.com",
     projectId: "ecommerce-perez-aldana",
     storageBucket: "ecommerce-perez-aldana.appspot.com",

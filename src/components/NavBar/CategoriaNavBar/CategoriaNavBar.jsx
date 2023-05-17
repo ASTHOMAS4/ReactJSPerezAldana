@@ -6,7 +6,7 @@ export const CategoriaNavBar = memo( () => {
   return (
     <div className="contCategorias">
         <ul>
-
+ 
             <li><Link to={`/`}>TODOS LOS PRODUCTOS</Link></li>
             <li><Link to={`/category/accs&deco`}>ACCS & DECO</Link></li>            
             <li><Link to={`/category/funkos`}>FUNKOS</Link></li>

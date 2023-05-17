@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+ 
 export const useCount = (valInicial = 1, min, max) => {
     if(valInicial<min || valInicial>max){
         valInicial = min
